@@ -82,6 +82,7 @@ All project-related files will be stored inside **Google Drive** under the `/My 
 
 6. Download & Extract Datasets. The datasets are provided as ZIP archives and should be extracted inside Google Drive. Arctic dataset into /MyDrive/Data, Archive into /MyDrive/TestData
 
+   Note - json files defining the configurations of the trained models are available in the '/models' folder. The models are not available but are created in the notebooks.
 
 ### **How to Run**
 1. Prepare Data → Run DataGenerating.ipynb to structure and preprocess the dataset.
