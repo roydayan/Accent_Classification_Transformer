@@ -34,12 +34,14 @@ Before running the notebooks, install the following dependencies:
 | `soundfile`      | Handling audio files             | `pip install soundfile` |
 
 💡 **Tip:** If using **Google Colab**, ensure your environment is set up correctly before running the notebooks.
+
 💡 **Tip:** The repository provides a `requirements.txt` file. This file contains a list of all the necessary packages for running the code. To create a virtual environment and install all packages, run:
-            ```bash
-            python -m venv myenv
-            source myenv/bin/activate  # On Windows use: myenv\Scripts\activate
-            pip install -r requirements.txt
             
+            ```bash
+            python -m venv <env_name>  # Replace <env_name> with a name of your choice
+            source <env_name>/bin/activate  # On Windows use: <env_name>\Scripts\activate
+            pip install -r requirements.txt
+          
 ---
 
 ### **Set Up Google Drive**
