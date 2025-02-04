@@ -1,4 +1,4 @@
 URL:
 https://www.kaggle.com/datasets/divyamagg/l2-arctic-data
 download dataset
-upload to drive (all 25 sub-directories) in folder /MyDrive/Deep_Project/Data
+upload dataset to Google Drive at /MyDrive/Deep_Project/Data (all 25 sub-directories into folder /MyDrive/Deep_Project/Data)
