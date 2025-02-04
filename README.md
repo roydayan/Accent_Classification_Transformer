@@ -1,9 +1,11 @@
 # Accent_Classification_Transformer
 Using a pretrained speech transformer for accent classification.
 
-## Project Overview
+## Background  
 
-This project fine-tunes **Wav2Vec2** for **accent classification**, using **data augmentation** and **LoRA (Low-Rank Adaptation)** to improve efficiency and generalization.
+Accents are an essential characteristic of speech and can provide information about a speaker’s linguistic background, regional origins, or native language influences. However, traditional speech recognition models often struggle with diverse accents, leading to performance degradation for non-native speakers.  
+
+This project aims to **fine-tune Wav2Vec2**, a **self-supervised speech representation model**, to classify different accents accurately. We explore **data augmentation** and **parameter-efficient fine-tuning (LoRA)** to improve model generalization across diverse speech patterns.  
 
 ---
 
