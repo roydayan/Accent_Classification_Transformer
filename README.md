@@ -65,6 +65,7 @@ All project-related files will be stored inside **Google Drive** under the `/My 
         - **`saved_models/`** → Stores trained model checkpoints, including `augmented_model/` where the fine-tuned model is saved.  
         - **`wav2vec2-lora-adapt/`, `wav2vec2-lora/`, `wav2vec2-base-fine-tuned/`** → Optional folders for different versions of fine-tuned models.  
 
+
 3. The notebooks will **automatically generate and save files** inside these directories.  
 
 4. If running in **Google Colab**, make sure to mount Google Drive before starting:  
@@ -75,7 +76,7 @@ All project-related files will be stored inside **Google Drive** under the `/My 
 
 5. The files in /My Drive/ should be shortcuts pointing to their actual locations in /My Drive/Deep_Project/
   /My Drive/
-    ├── Data/             # Original Arctic dataset
+    ├── Data/             # Original Arctic (Train) dataset
     ├── new_data/         # Processed dataset (organized by speakers)
     ├── AugmentedData/    # Augmented dataset (if using augmentation)
     ├── TestData/        # Test (Archive) dataset
@@ -85,14 +86,16 @@ All project-related files will be stored inside **Google Drive** under the `/My 
    Note - json files defining the configurations of the trained models are available in the '/models' folder. The models are not available but are created in the notebooks.
 
 ### **How to Run**
-1. Prepare Data → Run DataGenerating.ipynb to structure and preprocess the dataset.
+1. Upload Data onto Google Drive, as explained for each dataset separately in the data directory in this repository.
+  
+3. Prepare Data → Run DataGenerating.ipynb to structure and preprocess the dataset.
 
-2. Train on Original Data → Run OGDATAtraining.ipynb to fine-tune Wav2Vec2 without augmentation.
+4. Train on Original Data → Run OGDATAtraining.ipynb to fine-tune Wav2Vec2 without augmentation.
 
-3. Train on Augmented Data (Optional) → Run AugmentedData.ipynb to train the model on data-augmented speech samples.
+5. Train on Augmented Data (Optional) → Run AugmentedData.ipynb to train the model on data-augmented speech samples.
 
-4. Fine-Tune with LoRA (Optional) → Run Lora.ipynb for efficient fine-tuning using LoRA to reduce memory usage while training.
+6. Fine-Tune with LoRA (Optional) → Run Lora.ipynb for efficient fine-tuning using LoRA to reduce memory usage while training.
 
-5. Evaluate Performance → Compare model results on different datasets to assess generalization and accent classification accuracy.
+7. Evaluate Performance → Compare model results on different datasets to assess generalization and accent classification accuracy.
 
 
