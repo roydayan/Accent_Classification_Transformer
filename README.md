@@ -34,6 +34,7 @@ Before running the notebooks, install the following dependencies:
 | `soundfile`      | Handling audio files             | `pip install soundfile` |
 
 💡 **Tip:** If using **Google Colab**, ensure your environment is set up correctly before running the notebooks.
+💡 **Tip:** For recreating the environment, see the requirements.txt file
 
 ---
 
