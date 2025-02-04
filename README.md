@@ -20,10 +20,22 @@ This project aims to **fine-tune Wav2Vec2**, a **self-supervised speech represen
 
 ## Requirements
 
-### **Install Dependencies**
-Before running any notebooks, install the necessary Python libraries:
-```bash
-pip install transformers datasets torch librosa soundfile
+### **🔧 Required Libraries & Installation**
+
+Before running the notebooks, install the following dependencies:
+
+| **Library**       | **Purpose**                          | **Installation Command** |
+|------------------|----------------------------------|-------------------------|
+| `transformers`   | Pretrained Wav2Vec2 model & fine-tuning | `pip install transformers` |
+| `datasets`       | Loading & processing datasets   | `pip install datasets` |
+| `torch` (CPU)    | PyTorch for model training (CPU)  | `pip install torch torchvision torchaudio` |
+| `torch` (GPU)    | PyTorch for model training (GPU)  | `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118` |
+| `librosa`        | Audio processing                 | `pip install librosa` |
+| `soundfile`      | Handling audio files             | `pip install soundfile` |
+
+💡 **Tip:** If using **Google Colab**, ensure your environment is set up correctly before running the notebooks.
+
+---
 
 ### **Set Up Google Drive**
 All project-related files will be stored inside **Google Drive** under the `/My Drive/Deep_Project/` directory.  
@@ -39,12 +51,12 @@ All project-related files will be stored inside **Google Drive** under the `/My 
    - `saved_models/`
       -`augmented_model/`
 
-  Each subdirectory serves a specific purpose:
-  - **`new_data/`** → Stores the processed dataset, with each speaker having their own folder (`speaker1/`, `speaker2/`, ...).  
-  - **`AugmentedData/`** → Stores augmented versions of the dataset, also organized by speaker.  
-  - **`TestData/`** → Stores the dataset used for evaluating model performance.  
-  - **`saved_models/`** → Stores trained model checkpoints, including `augmented_model/` where the fine-tuned model is saved.  
-  - **`wav2vec2-lora-adapt/`, `wav2vec2-lora/`, `wav2vec2-base-fine-tuned/`** → Optional folders for different versions of fine-tuned models.  
+        Each subdirectory serves a specific purpose:
+        - **`new_data/`** → Stores the processed dataset, with each speaker having their own folder (`speaker1/`, `speaker2/`, ...).  
+        - **`AugmentedData/`** → Stores augmented versions of the dataset, also organized by speaker.  
+        - **`TestData/`** → Stores the dataset used for evaluating model performance.  
+        - **`saved_models/`** → Stores trained model checkpoints, including `augmented_model/` where the fine-tuned model is saved.  
+        - **`wav2vec2-lora-adapt/`, `wav2vec2-lora/`, `wav2vec2-base-fine-tuned/`** → Optional folders for different versions of fine-tuned models.  
 
 3. The notebooks will **automatically generate and save files** inside these directories.  
 
@@ -73,6 +85,6 @@ All project-related files will be stored inside **Google Drive** under the `/My 
 
 4. Fine-Tune with LoRA (Optional) → Run Lora.ipynb for efficient fine-tuning using LoRA to reduce memory usage while training.
 
-5️. Evaluate Performance → Compare model results on different datasets to assess generalization and accent classification accuracy.
+5. Evaluate Performance → Compare model results on different datasets to assess generalization and accent classification accuracy.
 
 
